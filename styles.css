@@ -1,0 +1,391 @@
+:root{
+    --dark-green: #006B5B;
+    --black: #111315;
+    --light-color:#777;
+  }
+/* Base styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container-assistance {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 20px;
+  }
+ 
+#years{
+    font-size: xx-large;
+    color: var(--dark-green);
+}
+
+#more{
+     color: var(--dark-green);
+}
+
+#unique{
+      font-family: 'Times New Roman', Times, serif;
+}
+
+#case-one{
+    background-image: url('./images/case_study_1.jpg');
+    background-size: cover;
+}
+#case-two{
+    background-image: url('./images/case_study_2.jpg');
+    background-size: cover;
+}
+#case-three{
+    background-image: url('./images/case_study_3.jpg');
+    background-size: cover;
+}
+#upper{
+    display: flex;
+    flex-direction: row;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 15px 0;
+}
+
+/* Header styles */
+header{
+    padding: 1rem 9%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    z-index: 1000;
+    background: var(--dark-green);
+    color: #fff;
+  }
+  
+  img{
+      height: 4.0rem ;
+      width: 4.0rem ;
+      color: var(--black);
+  }
+  
+ 
+  header .nav-links li a{
+       font-size: 0.9rem;
+       margin-left: 1.5rem;
+  }
+  
+  header .nav-links li a:hover{
+       color: var(--black);
+  }
+ 
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+/* Hero section styles */
+
+.hero {
+  background-image: url("images/hero-alternate.jpg"); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: #fff;
+  text-align: center;
+}
+
+
+.typewriter {
+  font-size: 8em;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* About Us section styles */
+
+.about-us {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.about-us-content .container-assistance p {
+    margin: 20px;
+  }
+ 
+.about-us-content > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+.about-us-content > div p:last-child{
+    align-items: flex-end;
+    font-size: x-small;
+  }
+
+.about-us-content p:first-child {
+  margin-right: 90px;
+}
+
+/* Services section styles */
+
+.services {
+  background-color: #fff;
+  padding: 50px 0;
+}
+
+.services-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.service {
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.green {
+  background-color: var(--dark-green);
+  color: #fff;
+}
+
+/* Case Studies section styles */
+
+.case-studies {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.case-study {
+  margin: 30px;
+}
+
+.case-study img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.case-study p {
+  margin-top: 10px;
+}
+
+.case-study-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  color: #999;
+}
+
+.case-study-info span {
+  cursor: pointer;
+}
+
+/* Testimonial section styles */
+
+.testimonial {
+  background-color: #fff;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.testimonial-content .left-side p {
+  margin-top: 10px;
+}
+
+.testimonial-content .right-side {
+  text-align: right;
+}
+
+.loading-dots {
+  display: inline-block;
+  position: relative;
+  width: 8px;
+  height: 8px;
+  margin-top: 10px;
+  background: var(--dark-green);
+  border-radius: 50%;
+  animation: blink 1.2s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Call to Action section styles */
+
+.call-to-action {
+  background-color: var(--dark-green);
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.call-to-action p:first-child {
+  margin-bottom: 20px;
+}
+
+.call-to-action button {
+  background-color: #fff;
+  color:  var(--dark-green);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+}
+  
+
+.footer-info,
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media li {
+  margin-right: 10px;
+}
+
+.social-media a {
+  color: #fff;
+}
+
+.contact-info button {
+  background-color: #fff;
+  color: var(--dark-green);
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.copyright-line {
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+}
