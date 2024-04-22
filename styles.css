@@ -93,12 +93,6 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    position: fixed;
-    left: 0;
-    right: 0;
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
-    z-index: 1000;
-    background: var(--dark-green);
     color: #fff;
   }
   
@@ -133,7 +127,7 @@ header{
   background-image: url("images/hero-alternate.jpg"); /* Replace with your background image */
   background-size: cover;
   background-position: center;
-  padding: 100px 0;
+  padding: 0 0 100px 0;
   color: #fff;
   text-align: center;
 }
