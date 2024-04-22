@@ -1,4 +1,4 @@
-<img width="1436" alt="Screenshot 2024-04-01 at 02 26 48" src="https://github.com/IanKaire/StylingChallenge/assets/114652346/c9129289-ed6e-43e3-b020-27a8b4ab0d91">
+<img width="1440" alt="Screenshot 2024-04-22 at 08 39 12" src="https://github.com/IanKaire/CytonnStylingChallenge1/assets/114652346/4f71e204-8123-4d27-8ab7-de034d9707cc">
 
 ## Styling Challenge 1
 
