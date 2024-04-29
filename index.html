@@ -6,6 +6,10 @@
     <title>Cytonn Investments</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="/app.js" defer></script>
 </head>
 <body>
     <section class="hero">
@@ -29,7 +33,8 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>   
-            <a href="#"><i class="fas fa-search"></i></a>   
+            <a href="#"><i class="fas fa-search search-icon"></i></a>   
+            <input type="text" id="search-bar" placeholder="Search our products" style="display: none;"> 
     </header>
         <div id="typewriter-container" class="container">
             <p class="typewriter">Design.</p>
@@ -69,37 +74,31 @@
                     <i class="fas fa-pencil-ruler"></i>
                     <h4>UX Design</h4>
                     <p>We design solutions for <br/> digital interactions. With its <br/> approach, our team.</p>
-                    <hr class="green">
                 </div>
                 <div class="service">
                     <i class="fas fa-mobile-alt"></i>
                     <h4>Mobile Apps</h4>
                     <p>We design solutions for <br/> digital interactions. With its <br/> approach, our team.</p>
-                    <hr class="green">
                 </div>
                 <div id="BSA" class="service">
-                    <i class="far fa-file-alt"></i> <i class="fas fa-pencil-alt"></i>
+                    <i class="fa-solid fa-book-open"></i>
                     <h4>BSA</h4>
                     <p>We design solutions for <br/> digital interactions. With its <br/> approach, our team.</p>
-                    <hr class="green">
                 </div>
                 <div class="service">
                     <i class="fas fa-globe"></i>
                     <h4>Web Development</h4>
                     <p>We design solutions for <br/> digital interactions. With its <br/> approach, our team.</p>
-                    <hr class="green">
                 </div>
                 <div class="service">
-                    <i class="fas fa-server"></i>
+                    <i class="fa-solid fa-cubes"></i>
                     <h4>I.T Management</h4>
                     <p>We design solutions for <br/> digital interactions. With its <br/> approach, our team.</p>
-                    <hr class="green">
                 </div>
                 <div class="service">
-                    <i class="fas fa-user"></i>
+                    <i class="fa-regular fa-id-badge"></i>
                     <h4>Photography</h4>
                     <p>We design solutions for <br/> digital interactions. With its <br/> approach, our team.</p>
-                    <hr class="green">
                 </div>
             </div>
         </div>
@@ -112,6 +111,7 @@
             <div id="case-one" class="case-study">
                 <p>ELECTIVE AFRICA</p>
                 <p>The web you need and love <br/> tailored to your interest</p>
+                <img src="/images/elective-africa.png"/>
             </div>
             <div id="case-two" class="case-study">
                 <p>MMC AFRICA</p>
@@ -152,7 +152,6 @@
     </div>    
     </section>
     <section class="testimonial">
-        <div class="testimonial-container">
             <div class="testimonial-content">
                 <div class="left-side">
                     <h2>CUSTOMER <br/> SAYS</h2>
@@ -161,16 +160,20 @@
                 <div class="right-side">
                     <p>Incredible Work! Best creative experience ever:timely, well <br/> executed and one hell of the result. Would recommend CT to <br/> anyone who is looking to revamp their identity</p>
                     <p> Grace Weru - Elective Africa</p>
+                   <div class="loading-dot-container">
                     <div class="loading-dots"></div>
+                    <div class="loading-dots"></div>
+                    <div class="loading-dots"></div>
+                    <div class="loading-dots"></div>
+                   </div>  
                 </div>
             </div>
-        </div>
     </section>
 
     <section class="call-to-action">
         <div class="container">
             <div class="call-to-action-container">
-             <p><strong>Ready to</strong><i>create something stunning</i><strong>with us?</strong></p>
+             <p><strong>Ready to</strong><i class="call-to-action-text"> create something stunning</i><strong> with us?</strong></p>
              <button>Contact Us</button>
             </div>
         </div>
@@ -185,18 +188,19 @@
                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-basketball"></i></a></li>
                 </ul>
             </div>
             <div class="contact-info">
-                <p>Email address</p>
+                <p>Email address*</p>
                 <hr>
-                <button>Sign Up</button>
+                <button>Signup</button>
                 <p>* No spamming here</p>
             </div>
         </div>
-        <div id="copyright-section"class="container">
+        <div id="copyright-section"class="copyright-container">
          <hr>
-        <p>&copy; Cytonn Technologies. All Rights Reserved. Terms & Conditions | Cookie policy</p>
+        <p>&copy; CytonnTechnologies. All Rights Reserved. Terms & Conditions | Cookie policy</p>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/d7930d6b8e.js" crossorigin="anonymous"></script>
