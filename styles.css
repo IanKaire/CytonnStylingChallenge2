@@ -319,7 +319,7 @@ header .nav-links li a:hover {
 .service {
   text-align: left;
   padding: 20px;
-  height: 150px;
+  height: 250px;
   width: 250px;
   border-bottom: 6px solid #006b20;
   margin-bottom: 20px;
@@ -729,7 +729,15 @@ footer hr{
   }
 
   }
-
+@media (max-width: 850px) {
+  
+    .testimonial-content .left-side {
+      margin-left: 5rem;
+    }
+    .testimonial-content .right-side {
+      width: 58%;
+    }
+    }
   @media (max-width: 768px) {
     .container-heading{
       font-size: 0.8rem;
