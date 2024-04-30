@@ -12,8 +12,12 @@
     <script src="/app.js" defer></script>
 </head>
 <body>
+    <div class="backdrop"></div>
     <section class="hero">
     <header>
+        <button class="toggle-button">
+            <i class="fas fa-bars"></i>   
+        </button>
         <div class="logo">
             <div class="logo-icon">
           <i class="fa-solid fa-moon"></i>
@@ -24,7 +28,7 @@
             <p>TECHNOLOGIES</p>
         </div>
           </div>  
-            <nav>
+            <nav class="main-nav">
                 <ul class="nav-links">
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Products</a></li>
@@ -36,6 +40,15 @@
             <a href="#"><i class="fas fa-search search-icon"></i></a>   
             <input type="text" id="search-bar" placeholder="Search our products" style="display: none;"> 
     </header>
+    <nav class="mobile-nav">
+          <ul class="mobile-nav__items">
+             <li><a href="#">Services</a></li>
+             <li><a href="#">Products</a></li>
+             <li><a href="#">Firm</a></li>
+             <li><a href="#">Blog</a></li>
+             <li><a href="#">Contact</a></li>
+          </ul>
+     </nav>   
         <div id="typewriter-container" class="container">
             <p class="typewriter">Design.</p>
             <hr>
@@ -47,7 +60,7 @@
     </section>
 
     <section class="about-us">
-        <div class="container">
+        <div class="about-us-container">
             <div id="unique">
                 <p>Hello! We're A Creative Team in Nairobi That Focuses</p>
                 <p>On Design, Development & IT Solutions.</p>
@@ -154,8 +167,8 @@
     <section class="testimonial">
             <div class="testimonial-content">
                 <div class="left-side">
-                    <h2>CUSTOMER <br/> SAYS</h2>
-                    <p>We design solutions for digital <br/> interactions.</p>
+                    <h2>CUSTOMER <br/>SAYS</h2>
+                    <p>We design solutions for digital interactions.</p>
                 </div>
                 <div class="right-side">
                     <p>Incredible Work! Best creative experience ever:timely, well <br/> executed and one hell of the result. Would recommend CT to <br/> anyone who is looking to revamp their identity</p>
@@ -182,7 +195,7 @@
     <footer>
         <div class="container">
             <div class="footer-info">
-                <p>NEVER MISS UPDATES</p>
+                <p class="container-heading">NEVER MISS UPDATES</p>
                 <p>Want to be notified when we launch a new template or an <br/> update. Just sign up and we'll send you a notification by <br/> email</p>
                 <ul class="social-media">
                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>

@@ -4,11 +4,28 @@
   --black: #111315;
   --light-color: #777;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 /* Base styles */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .logo{
@@ -54,6 +71,12 @@ body {
 }
 
 .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-us-container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
@@ -350,7 +373,7 @@ header .nav-links li a:hover {
   position: relative;
   text-align: left;
   padding: 20px;
-  height: 180px;
+  height: 250px;
 }
 
 .case-study img {
@@ -395,7 +418,7 @@ header .nav-links li a:hover {
   text-align: left;
   padding: 20px;
   background-color: #fff;
-  height: 150px;
+  height: 210px;
 }
 
 .blog h4{
@@ -455,8 +478,9 @@ header .nav-links li a:hover {
 }
 
 .testimonial-content .left-side {
+  padding-right: 3rem ;
   margin-left: 38rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .testimonial-content .right-side {
@@ -464,6 +488,7 @@ header .nav-links li a:hover {
 }
 
 .testimonial-content .left-side p {
+  margin-top: 1rem;
   font-size: 0.8rem;
   color:#777;
 }
@@ -474,14 +499,14 @@ header .nav-links li a:hover {
   flex-direction: column;
   justify-content: center;
   margin-left: 10px;
-  width: 46%;
+  width: 66%;
 }
 
 .testimonial-content .right-side p:first-child {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
   color: white;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .testimonial-content p + p {
@@ -586,13 +611,6 @@ footer .container {
   margin-bottom: 1rem;
 }
 
-.footer-info p:first-child{
-  font-weight: bold;
-  color:#777;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
 .footer-info p + p{
   text-align: left;
   font-size: 0.9rem;
@@ -649,4 +667,140 @@ footer hr{
   color:#777;
   width: 100%;
 }
+
+.toggle-button {
+  border: none;
+  background-color: inherit;
+  color: #fff;
+}
+
+.open {
+  display: block !important;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: var(--light-green);
+  width: 50%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style-type: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+
+.mobile-nav__items li {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
+ }
+
+ /* Responsive styles for mobile and tablets */
+
+@media (max-width: 1280px) {
+  
+.testimonial-content .left-side {
+  margin-left: 12rem;
+  margin-bottom: 2.5rem;
+  padding: 3rem 5rem;
+}
+ .testimonial-content .right-side {
+  width: 100%;
+}
+
+}
+
+@media (max-width: 1024px) {
+  
+  .testimonial-content .left-side {
+    margin-left: 5rem;
+  }
+
+  }
+
+  @media (max-width: 768px) {
+    .container-heading{
+      font-size: 0.8rem;
+    }
+    #typewriter-container{
+      padding-left: 30px;
+    }
+    .typewriter {
+      font-size: 5em;
+    }
+    .about-us {
+      text-align: center;
+      padding-left: 50px;
+    }
+    .about-us-content {
+      flex-direction: column;
+    }
+    .service {
+      height: 250px;
+    }
+    .case-study {
+      height: 220px;
+    }
+    .testimonial-content {
+      flex-direction: column;
+     }  
+    .testimonial-content .left-side {
+      padding-right: 0 ;
+      margin-left: 0.05rem;
+      margin-right: 2rem;
+    }
+    .testimonial-content .right-side {
+      width: 100%;
+    }
+    .call-to-action-container {
+      flex-direction: column;
+    }
+    .call-to-action p:first-child {
+      margin-left: 20px;
+      font-size: 0.8rem;
+    }
+    footer .container {
+      flex-direction: column;
+    }
+    #unique {
+     padding-left: 60px;
+    }
+    #upper {
+      flex-direction: column;
+    }
+    #case-one, #case-two, #case-three {
+       width: 80%;
+    }
+    #copyright-section p{
+      font-size: 0.5rem;
+      text-align: center;
+    }
+    #search-bar {
+      margin-left: 0.5rem;
+      padding: 0.5rem;
+      width: 70%;
+    }
+     .main-nav {
+        display: none;
+      }
+    }
+
+ @media (min-width: 768px) {
+  .toggle-button, .mobile-nav {
+      display: none;
+    }
+  }
+ 
 
