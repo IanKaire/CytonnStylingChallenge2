@@ -22,3 +22,21 @@ toggleButton.addEventListener("click", function() {
   mobileNav.classList.add("open");
   backdrop.classList.add("open");
 });
+
+const testimonialDots = document.querySelectorAll('.loading-dot');
+const testimonialTexts = document.querySelectorAll('.testimonial-text');
+
+let currentTestimonialIndex = 0;
+
+testimonialDots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    // Update active dot and hide previous testimonial
+    testimonialDots[currentTestimonialIndex].classList.remove('active');
+    testimonialTexts[currentTestimonialIndex].classList.remove("open");
+
+    // Update current index and display new testimonial
+    currentTestimonialIndex = index;
+    testimonialDots[currentTestimonialIndex].classList.add('active');
+    testimonialTexts[currentTestimonialIndex].classList.add("open");
+  });
+});
