@@ -222,7 +222,7 @@ header .nav-links li a:hover {
 /* Hero section styles */
 
 .hero {
-  background-image: url("images/hero-alternate.jpg"); /* Replace with your background image */
+  background-image: url("images/hero-alternate.png"); /* Replace with your background image */
   background-size: cover;
   background-position: center;
   padding: 0 0 20px 0;
