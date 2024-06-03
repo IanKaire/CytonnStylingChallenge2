@@ -33,41 +33,12 @@ body {
   flex-direction: row;
   align-items: center;
   padding: 0 9%;
+  margin-left: 3.8rem;
 }
 
-.logo-title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.logo-icon {
-  position: relative;
-  margin-right: 0.2rem;
-}
-
-.logo-icon i:first-child {
-  font-size: 2rem;
-}
-
-.logo-icon i:last-child {
-  position: absolute;
-  margin-top: 0.5rem;
-  right: 0;
-  font-size: 0.8rem;
-}
-
-.logo-title p:first-child {
-  font-weight: bold;
-}
-
-.logo-title p:first-child span {
-  font-size: 1.2rem;
-}
-
-.logo-title p:last-child {
-  margin-top: 0;
-  font-size: 0.5rem;
+.logo img {
+  width: 100px;
+  height: 30px;
 }
 
 .container {
@@ -767,6 +738,9 @@ footer hr {
 /* Responsive styles for mobile and tablets */
 
 @media (max-width: 1280px) {
+  .logo {
+    margin-left: 0;
+  }
   .testimonial-content .left-side {
     margin-left: 12rem;
     margin-bottom: 2.5rem;
@@ -778,6 +752,9 @@ footer hr {
 }
 
 @media (max-width: 1024px) {
+  .logo {
+    margin-left: 0;
+  }
   #typewriter-container {
     width: 80%;
   }
@@ -787,6 +764,9 @@ footer hr {
 }
 
 @media (max-width: 900px) {
+  .logo {
+    margin-left: 0;
+  }
   .services {
     padding-left: 150px;
   }
@@ -796,6 +776,9 @@ footer hr {
 } 
 
 @media (max-width: 850px) {
+  .logo {
+    margin-left: 0;
+  }
   .services {
     padding-left: 80px;
   }
@@ -811,6 +794,9 @@ footer hr {
 }
 
 @media (max-width: 850px) {
+  .logo {
+    margin-left: 0;
+  }
   .grid-container {
     padding: 50px 50px;
   }
@@ -825,6 +811,9 @@ footer hr {
   } 
 }
 @media (max-width: 768px) {
+  .logo {
+    margin-left: 0;
+  }
   .container-heading {
     font-size: 0.8rem;
   }
